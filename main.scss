@@ -1,0 +1,74 @@
+// .main {
+//   background-color: lightblue;
+//   .main-heading {
+//     font-size: 2em;
+//   }
+//   .main-paragraph {
+//     font-size: 1.4em;
+//   }
+// }
+// .main,
+// footer {
+//   h1,
+//   p {
+//     letter-spacing: 1px;
+//   }
+// }
+//&
+//Parent Selector
+// .main {
+//   .container & {
+//     background-color: lightblue;
+//   }
+//   &:hover {
+//     background-color: lightcoral;
+//   }
+// }
+// .main {
+//   #{&}-heading {
+//     font-size: 2em;
+//   }
+//   #{&}-paragraph {
+//     font-size: 1.4em;
+//   }
+// }
+// .footer {
+//   #{&}-heading {
+//     font-size: 2em;
+//   }
+//   #{&}-paragraph {
+//     font-size: 1.4em;
+//   }
+// }
+//scss variable
+// $primary-color: salmon;
+// $secondary-color: blue;
+// $danger-color: red;
+// body {
+//   $danger-color: pink;
+//   background-color: $danger-color;
+// }
+
+//MAP
+// $alert-danger: red;
+// $alert-succes: green;
+// $alert-warning: yellow;
+
+// $alert: (
+//   "danger": red,
+//   "success": green,
+//   "warning": yellow,
+// );
+
+// h1 {
+//   color: map-get($alert, "success");
+// }
+// Mixin
+// @import "mixin";
+// @import "header";
+// @import "footer"; //arguments pada mixin
+// @import "container";
+
+@use "header";
+@use "footer"; //arguments pada mixin
+@use "container";
